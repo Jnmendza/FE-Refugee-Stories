@@ -1,11 +1,13 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 import styled from 'styled-components';
+import logo from '../design/logo.png';
 
 const Nav = styled.nav`
     display: flex;
     background: #3C3C54;
     justify-content: flex-end;
+    height: 80px;
 `;
 
 
@@ -24,12 +26,16 @@ const StyledNavLink = styled(NavLink)`
 
 `;
 
+const Image = styled.a`
+    margin: auto 0;
+`;
+
 const Navigation = () => {
   return (
     
       <Nav>
           
-        <h1>Refugee Stories</h1>
+        <Image href="/" ><img src={logo} height="65" width="140" /> </Image>
            
           <NavigationLinks>     
             <StyledNavLink to="/">Home</StyledNavLink>      

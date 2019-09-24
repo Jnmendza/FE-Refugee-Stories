@@ -16,7 +16,6 @@ const App = () => (
     <Route path="/stories" component={Stories} />
     <Route path="/submit" component={Submit} />
     <Route path="/login" component={Login} />
-
   </div>
 
 

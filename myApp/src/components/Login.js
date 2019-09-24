@@ -60,7 +60,7 @@ const FormikLoginForm = withFormik({
   //You can use this to see the values
   handleSubmit(values, { setStatus }) {
     axios
-      .post("https://reqres.in/api/users/", values)
+      .post("", values)
       .then(res => {
         setStatus(res.data);
       })
@@ -68,4 +68,5 @@ const FormikLoginForm = withFormik({
   }
 })(LoginForm);
 console.log("This is the HOC", FormikLoginForm);
+
 export default FormikLoginForm;

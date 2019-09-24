@@ -1,5 +1,10 @@
 import React from 'react';
+import StoryForm from './StoryForm';
 
-const Home = () => <h1>Home</h1>;
+const Home = () => {
+    return (
+        <StoryForm />
+ );
+};
 
 export default Home;
